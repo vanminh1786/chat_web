@@ -42,9 +42,6 @@ io.on('connection', (socket) => {
 	});
 
 	socket.on('send_message', (data) => {
-		// console.log(data.room, data.uid, data.mess);
-		// console.log(socket.rooms);
-		// console.log('#');
 		socket.to(data.room).emit('receive_message', {
 			uid: data.uid,
 			mess: data.mess,
