@@ -12,10 +12,10 @@ const router = require('./src/routes/index');
 //HTTP logger
 app.use(morgan('combined'));
 
-app.use(express.static(path.join(__dirname, 'public')));
-// console.log(path.join(__dirname, 'public'));
+app.use(express.static(path.join(__dirname, '/public')));
+console.log(path.join(__dirname, '/public'));
 app.get('*', (req, res) => {
-	res.sendFile('index.html', { root: path.join(__dirname, 'public') });
+	res.sendFile('index.html', { root: path.join(__dirname, '/public') });
 });
 
 app.use(cors());
