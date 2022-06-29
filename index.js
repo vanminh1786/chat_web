@@ -12,11 +12,9 @@ const router = require('./src/routes/index');
 //HTTP logger
 app.use(morgan('combined'));
 
-app.use(express.static(path.join(__dirname, '/public')));
-console.log(path.join(__dirname, '/public'));
-app.get('*', (req, res) => {
-	res.sendFile('index.html', { root: path.join(__dirname, '/public') });
-});
+if (process.env.NODE_ENV === 'production') {
+	express.use(express.static('frontend/build'));
+}
 
 app.use(cors());
 app.use(express.json());

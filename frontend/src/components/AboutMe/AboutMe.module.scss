@@ -1,0 +1,61 @@
+.wrap {
+  width: 25%;
+  height: 96vh;
+  background-color: #f3f6ff;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+}
+
+.escape {
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+  margin-top: 20px;
+  width: 30px;
+  font-weight: bold;
+  color: rgb(65, 20, 245);
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(255, 135, 135);
+    border-radius: 20px;
+    padding: 5px 0;
+  }
+}
+
+.image {
+  margin: 50px 0;
+
+  img {
+    width: 200px;
+    border-radius: 100px;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: rgb(237, 31, 37);
+    text-shadow: 5px 0 10px rgb(254, 95, 95), -5px 0 10px rgb(254, 95, 95);
+  }
+}
+
+.infor {
+  font-size: 24px;
+
+  p {
+    margin-top: 40px;
+    color: #05a7f8;
+  }
+
+  .list {
+    height: 33vh;
+    overflow: auto;
+  }
+
+  .friend {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #4fc3fc;
+  }
+}

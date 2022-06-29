@@ -1,0 +1,152 @@
+.wrap {
+	width: 18vw;
+	padding: 10px;
+}
+
+.add_friend {
+	font-size: 18px;
+	border: 1px dotted rgb(159, 158, 158);
+	border-radius: 30px;
+	display: flex;
+	text-decoration: none;
+	color: black;
+	align-items: center;
+
+	&:hover {
+		background-color: #f3f6ff;
+	}
+
+	.wrap_icon {
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		text-align: center;
+		background-color: rgba(117, 216, 252, 0.4);
+		border-radius: 50px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.icon_plus {
+			position: relative;
+			top: 26%;
+			font-size: 20px;
+			color: rgb(23, 172, 226);
+		}
+	}
+
+	.search_phone {
+		display: flex;
+
+		h1 {
+			position: relative;
+			left: 10%;
+			font-size: 26px;
+		}
+
+		input {
+			display: none;
+			outline: none;
+			border: none;
+			width: 175px;
+			padding: 10px 5px 10px 15px;
+			font-size: 14px;
+			border-radius: 20px;
+		}
+
+		p {
+			display: none;
+			position: absolute;
+			top: 108px;
+			left: 120px;
+			font-size: 14px;
+		}
+
+		.new_friend {
+			// display: none;
+			position: absolute;
+			top: 110px;
+			left: 120px;
+			font-size: 18px;
+			padding: 6px 3px;
+			border-radius: 20px;
+			background-color: #f3f6ff;
+			z-index: 3;
+
+			&:hover {
+				cursor: pointer;
+				background-color: #fab2f5;
+			}
+		}
+
+		.loading {
+			display: none;
+			position: absolute;
+			top: 65px;
+			left: 260px;
+			width: 22px;
+		}
+
+		span {
+			width: 20px;
+			text-align: center;
+			display: none;
+			position: relative;
+			top: 6px;
+			right: 20px;
+			z-index: 2;
+
+			&:hover {
+				cursor: pointer;
+				color: red;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+
+.main_content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 30px 0;
+	font-family: 'Helvetica Neue', 'Helvetica';
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	margin: 20px 5px;
+
+	input {
+		width: 90%;
+		font-size: 14px;
+		padding: 10px;
+		border: none;
+		outline: none;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		background-color: rgba(117, 216, 252, 0.4);
+	}
+
+	button {
+		position: relative;
+		top: 2px;
+		background-color: transparent;
+		border: none;
+
+		svg {
+			height: 37px;
+			fill: rgb(134, 133, 133);
+			padding: 10px;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+			background-color: rgba(117, 216, 252, 0.4);
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

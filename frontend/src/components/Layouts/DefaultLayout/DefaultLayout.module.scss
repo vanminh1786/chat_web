@@ -1,0 +1,21 @@
+.wrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: #f3f6ff;
+  margin-left: 20px;
+  height: 96vh;
+}
+
+.sidebar {
+  width: 30%;
+  // margin-left: 20px;
+  padding: 20px;
+  // overflow: auto;
+}
+
+.content {
+  width: 65%;
+  margin-right: 30px;
+}

@@ -1,0 +1,94 @@
+.wrap {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.top {
+	margin-top: 30px;
+
+	p {
+		font-size: 24px;
+	}
+}
+
+.loading {
+	display: none;
+	width: 10%;
+	margin: 0 auto;
+}
+
+.content {
+	background-color: #d7e0e9;
+	border-radius: 5px;
+	border: 1px solid #bac0c6;
+	text-align: left;
+	padding: 5px 20px;
+
+	p {
+		margin: 16px 0 8px 0;
+
+		a {
+			float: right;
+		}
+	}
+
+	input {
+		border-radius: 5px;
+		outline: none;
+		border: 1px solid #bac0c6;
+		padding: 5px 10px;
+		font-size: 14px;
+		width: 100%;
+
+		&[type="password"]::-ms-reveal {
+      display: none;
+    }
+
+		&:focus {
+			border-color: #58a6ff;
+			box-shadow: 1px 1px 3px #58a6ff;
+		}
+	}
+}
+
+.sign_in {
+	width: 100%;
+	text-align: center;
+	margin: 10px 0 5px 0;
+
+	h5 {
+		color: red;
+		margin: 5px 0;
+		display: none;
+	}
+
+	button {
+		color: white;
+		background-color: #28aa42;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 5px 20px;
+		transition: background-color 0.6s;
+
+		&:hover {
+			background-color: #34db56;
+			cursor: pointer;
+		}
+	}
+}
+
+.sign_up {
+	border: 1px solid #bac0c6;
+	border-radius: 5px;
+	margin: 16px 0;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.wrap a {
+	text-decoration: none;
+	color: rgb(72, 115, 245);
+}
