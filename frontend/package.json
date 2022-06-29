@@ -9,9 +9,7 @@
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0",
 		"react-scripts": "5.0.1",
-		"web-vitals": "^2.1.4"
-	},
-	"devDependencies": {
+		"web-vitals": "^2.1.4",
 		"@fortawesome/fontawesome-svg-core": "^1.2.17",
 		"@fortawesome/free-brands-svg-icons": "^5.8.1",
 		"@fortawesome/free-regular-svg-icons": "^5.8.1",
@@ -32,6 +30,7 @@
 		"sass": "^1.52.1",
 		"socket.io-client": "^4.5.1"
 	},
+	"devDependencies": {},
 	"scripts": {
 		"start": "react-app-rewired start",
 		"build": "react-app-rewired build",
