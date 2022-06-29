@@ -13,7 +13,10 @@ const router = require('./src/routes/index');
 app.use(morgan('combined'));
 
 if (process.env.NODE_ENV === 'production') {
-	express.use(express.static('frontend/build'));
+	app.use(express.static(path.join(__dirname, 'frontend/build')));
+	app.get('*', (req, res) => {
+		res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+	});
 }
 
 app.use(cors());

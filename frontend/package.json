@@ -31,6 +31,7 @@
 		"socket.io-client": "^4.5.1"
 	},
 	"devDependencies": {},
+	"proxy": "http://localhost:3001/",
 	"scripts": {
 		"start": "react-app-rewired start",
 		"build": "react-app-rewired build",

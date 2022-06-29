@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { setSaveConv } from '~/store/slices';
 
 let cx = className.bind(styles);
-const socket = io.connect('http://localhost:3001');
+const socket = io.connect('http://localhost:3001/');
 
 function Conversation() {
 	const userId = window.sessionStorage.getItem('userId');

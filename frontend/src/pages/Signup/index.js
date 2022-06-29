@@ -31,7 +31,7 @@ function Signup() {
 				phone,
 				pw,
 			},
-		}).then((res) => {			
+		}).then((res) => {
 			// data = res.data.success;
 			// console.log(1, tmp, data);
 			const err = checkCondition();
@@ -58,7 +58,7 @@ function Signup() {
 		}
 
 		return 0;
-	}
+	};
 
 	const redirect = (data) => {
 		if (data == true) {
@@ -66,17 +66,17 @@ function Signup() {
 			return;
 		} else {
 			navigate('/', { replace: true });
-		} 
-	}
+		}
+	};
 
 	const handleSignup = (e) => {
 		// console.log(e);
 		e.preventDefault();
-		
+
 		const err = checkCondition();
 		// console.log(err);
 
-		if (err == 0) setTmp(preState => preState + 1);
+		if (err == 0) setTmp((preState) => preState + 1);
 	};
 
 	return (
@@ -85,7 +85,7 @@ function Signup() {
 				Hello!
 				<br />
 				We are glad to see you :)
-			</p>			
+			</p>
 			<Link className={cx('escape')} to="/">
 				X
 			</Link>
@@ -128,7 +128,12 @@ function Signup() {
 				/>
 			</div>
 			<div ref={loading} className={cx('loading')}>
-				<ReactLoading type="spinningBubbles" color="pink" height="5" width="5" />
+				<ReactLoading
+					type="spinningBubbles"
+					color="pink"
+					height="5"
+					width="5"
+				/>
 			</div>
 			<h5 ref={warning1}>Repeat password is different from password!</h5>
 			<h5 ref={warning2}>Please check to degree the term!</h5>

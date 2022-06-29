@@ -7,7 +7,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "node index.js",
+		"start": "nodemon index.js",
 		"build": "cd frontend && npm run build",
 		"install-frontend": "cd frontend && npm install",
 		"frontend": "cd frontend && npm start",
