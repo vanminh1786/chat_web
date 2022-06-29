@@ -18,7 +18,7 @@ function Login() {
 	useEffect(() => {
 		loading.current.style.display = 'block';
 		axios({
-			url: 'http://localhost:3001/login',
+			url: 'https://chatweb99.herokuapp.com/login',
 			method: 'POST',
 			data: {
 				phone,

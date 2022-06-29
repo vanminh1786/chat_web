@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { setSaveConv } from '~/store/slices';
 
 let cx = className.bind(styles);
-const socket = io.connect('http://localhost:3001/');
+const socket = io.connect('https://chatweb99.herokuapp.com/');
 
 function Conversation() {
 	const userId = window.sessionStorage.getItem('userId');
@@ -61,7 +61,7 @@ function Conversation() {
 		if (frid != '') {
 			loading.current.style.display = 'block';
 			axios({
-				url: 'http://localhost:3001/cvs/',
+				url: 'https://chatweb99.herokuapp.com/cvs/',
 				method: 'POST',
 				data: {
 					uid1: userId,
@@ -85,7 +85,7 @@ function Conversation() {
 
 	const saveConv = () => {
 		axios({
-			url: 'http://localhost:3001/cvs/update',
+			url: 'https://chatweb99.herokuapp.com/cvs/update',
 			method: 'POST',
 			data: {
 				id: roomId,

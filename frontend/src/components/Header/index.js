@@ -44,7 +44,7 @@ function Header() {
 		if (e.key != 'Enter') return;
 		loading.current.style.display = 'block';
 		axios({
-			url: 'http://localhost:3001/user',
+			url: 'https://chatweb99.herokuapp.com/user',
 			method: 'POST',
 			data: {
 				phone,
@@ -71,7 +71,7 @@ function Header() {
 		closeAdd();
 		// console.log(user.name.slice(user.name.indexOf(' ')));
 		axios({
-			url: 'http://localhost:3001/user/addFriends',
+			url: 'https://chatweb99.herokuapp.com/user/addFriends',
 			method: 'POST',
 			data: {
 				uid1: uid.toString(),

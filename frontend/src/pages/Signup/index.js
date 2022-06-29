@@ -24,7 +24,7 @@ function Signup() {
 	useEffect(() => {
 		loading.current.style.display = 'block';
 		axios({
-			url: 'http://localhost:3001/signup',
+			url: 'https://chatweb99.herokuapp.com/signup',
 			method: 'POST',
 			data: {
 				name,
